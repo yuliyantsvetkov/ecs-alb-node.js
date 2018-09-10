@@ -41,7 +41,7 @@ Below you can find the project directory structure with description of the folde
 ---
 ### How to create the infrastructure
 
-1) Once you have installed the software mentioned in the *Prerequisites* you need to checkout your Node.js code in the `docker-image/` folder. Edit the Docker file to match the building procedure you have for your Node.js application.
+1) Once you have installed the software mentioned in the *Prerequisites* you need to checkout your Node.js code in the `docker-image/` folder. Edit the Docker file to match the building procedure you have for your Node.js application. Keep in mind that you need to expose port 80 and ensure that your app is not running on localhost.
 
 2) Enter your `AWS_ACCESS_KEY_ID`, `AWS_SECRET_KEY`, `ACCOUNT_URL` and your local machine SSH public key inside the `./deployment/credentials.sh` file. Those are needed by Terraform in order to be able to access your AWS account.
 
